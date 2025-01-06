@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Menu.css";
 import {gsap} from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -57,7 +57,9 @@ const Menu = () => {
           <Link href="/">CodeerGurru</Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
-          <p>Menu</p>
+          <p>
+          <GiHamburgerMenu />
+          </p>
         </div>
       </div>
       <div className="menu-overlay">
